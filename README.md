@@ -1,135 +1,139 @@
-# Turborepo starter
+# 🏠 Roomkarts
 
-This Turborepo starter is maintained by the Turborepo core team.
+> **🔑 Demo Login Credentials**
+>
+> **User Account**
+>
+> * Mobile: `9719507080`
+> * Password: `507080`
+>
+> **Owner Account**
+>
+> * Mobile: `9045551584`
+> * Password: `507080`
+>
+> 📍 **Demo Property:** New Delhi
 
-## Using this example
+---
 
-Run the following command:
+**Roomkarts** is a full-stack real-estate platform for discovering and publishing **Flats, PGs, and Rooms** with dedicated workflows for Users and Owners.
 
-```sh
-npx create-turbo@latest
+🌐 **Live Demo:** https://roomkarts.com
+
+---
+
+## 🤔 Why Roomkarts?
+
+Finding the right property can be time-consuming due to scattered listings, limited location-based discovery, and complicated rental workflows.
+
+**Roomkarts** brings the experience into one platform where users can:
+
+* 🔎 Discover properties based on location and requirements
+* 🏠 Explore Flats, PGs, and Rooms
+* 📍 Find properties using location-based search
+* ❤️ Save properties to Wishlist
+* 👤 Connect with property Owners
+* 📊 Manage listings through dedicated dashboards
+
+For Owners, Roomkarts provides a simple way to **publish, manage, and showcase properties** to potential tenants and buyers.
+
+---
+
+## ✨ Features
+
+* 🔐 Role-based authentication
+* 👤 User, Owner workflows
+* 🏠 Property listing & publishing
+* 🔎 Property search & filtering
+* 📍 Location-based property discovery
+* 📊 Owner & User dashboards
+* 🖼️ AWS S3 image management
+* 🗺️ Google Maps integration
+* ❤️ Wishlist
+* 📝 Property drafts & management
+
+---
+
+## 🛠️ Tech Stack
+
+**Frontend:**
+Next.js • React • TypeScript • Tailwind CSS
+
+**Backend:**
+Node.js • Express.js • REST APIs
+
+**Database:**
+PostgreSQL • Prisma ORM
+
+**Authentication:**
+JWT • bcrypt • MSG91 OTP
+
+**Cloud & Storage:**
+AWS S3 • AWS EC2 • Google Maps API
+
+**DevOps:**
+Docker • Nginx • PM2 • Git • GitHub
+
+---
+
+## 🚀 Getting Started
+
+### Clone
+
+```bash
+git clone https://github.com/yashguptangl/Roomkarts.git
+cd Roomkarts
 ```
 
-## What's inside?
+### Install
 
-This Turborepo includes the following packages/apps:
-
-### Apps and Packages
-
-- `docs`: a [Next.js](https://nextjs.org/) app
-- `web`: another [Next.js](https://nextjs.org/) app
-- `@repo/ui`: a stub React component library shared by both `web` and `docs` applications
-- `@repo/eslint-config`: `eslint` configurations (includes `eslint-config-next` and `eslint-config-prettier`)
-- `@repo/typescript-config`: `tsconfig.json`s used throughout the monorepo
-
-Each package/app is 100% [TypeScript](https://www.typescriptlang.org/).
-
-### Utilities
-
-This Turborepo has some additional tools already setup for you:
-
-- [TypeScript](https://www.typescriptlang.org/) for static type checking
-- [ESLint](https://eslint.org/) for code linting
-- [Prettier](https://prettier.io) for code formatting
-
-### Build
-
-To build all apps and packages, run the following command:
-
-```
-cd my-turborepo
-
-# With [global `turbo`](https://turborepo.com/docs/getting-started/installation#global-installation) installed (recommended)
-turbo build
-
-# Without [global `turbo`](https://turborepo.com/docs/getting-started/installation#global-installation), use your package manager
-npx turbo build
-yarn dlx turbo build
-pnpm exec turbo build
+```bash
+npm install
 ```
 
-You can build a specific package by using a [filter](https://turborepo.com/docs/crafting-your-repository/running-tasks#using-filters):
+### Environment Variables
 
-```
-# With [global `turbo`](https://turborepo.com/docs/getting-started/installation#global-installation) installed (recommended)
-turbo build --filter=docs
+Create a `.env` file and configure the required credentials:
 
-# Without [global `turbo`](https://turborepo.com/docs/getting-started/installation#global-installation), use your package manager
-npx turbo build --filter=docs
-yarn exec turbo build --filter=docs
-pnpm exec turbo build --filter=docs
-```
+```env
+DATABASE_URL=
+JWT_SECRET=
 
-### Develop
+AWS_ACCESS_KEY_ID=
+AWS_SECRET_ACCESS_KEY=
+AWS_REGION=
+AWS_S3_BUCKET=
 
-To develop all apps and packages, run the following command:
-
-```
-cd my-turborepo
-
-# With [global `turbo`](https://turborepo.com/docs/getting-started/installation#global-installation) installed (recommended)
-turbo dev
-
-# Without [global `turbo`](https://turborepo.com/docs/getting-started/installation#global-installation), use your package manager
-npx turbo dev
-yarn exec turbo dev
-pnpm exec turbo dev
+GOOGLE_MAPS_API_KEY=
 ```
 
-You can develop a specific package by using a [filter](https://turborepo.com/docs/crafting-your-repository/running-tasks#using-filters):
+### Run
 
-```
-# With [global `turbo`](https://turborepo.com/docs/getting-started/installation#global-installation) installed (recommended)
-turbo dev --filter=web
-
-# Without [global `turbo`](https://turborepo.com/docs/getting-started/installation#global-installation), use your package manager
-npx turbo dev --filter=web
-yarn exec turbo dev --filter=web
-pnpm exec turbo dev --filter=web
+```bash
+npm run dev
 ```
 
-### Remote Caching
+---
 
-> [!TIP]
-> Vercel Remote Cache is free for all plans. Get started today at [vercel.com](https://vercel.com/signup?/signup?utm_source=remote-cache-sdk&utm_campaign=free_remote_cache).
+## 🎯 Project Highlights
 
-Turborepo can use a technique known as [Remote Caching](https://turborepo.com/docs/core-concepts/remote-caching) to share cache artifacts across machines, enabling you to share build caches with your team and CI/CD pipelines.
+* Full-stack production-oriented architecture
+* Role-based User / Owner workflows
+* Cloud-based image storage using AWS S3
+* Location-based property discovery
+* Secure authentication
+* Responsive modern UI
 
-By default, Turborepo will cache locally. To enable Remote Caching you will need an account with Vercel. If you don't have an account you can [create one](https://vercel.com/signup?utm_source=turborepo-examples), then enter the following commands:
+---
 
-```
-cd my-turborepo
+## 👨‍💻 Developer
 
-# With [global `turbo`](https://turborepo.com/docs/getting-started/installation#global-installation) installed (recommended)
-turbo login
+**Yash Gupta**
 
-# Without [global `turbo`](https://turborepo.com/docs/getting-started/installation#global-installation), use your package manager
-npx turbo login
-yarn exec turbo login
-pnpm exec turbo login
-```
+🌐 Portfolio: https://yashguptangl.github.io/portfolio/
+💼 LinkedIn: https://www.linkedin.com/in/yash-gupta-1188913a4/
+🐙 GitHub: https://github.com/yashguptangl
 
-This will authenticate the Turborepo CLI with your [Vercel account](https://vercel.com/docs/concepts/personal-accounts/overview).
+---
 
-Next, you can link your Turborepo to your Remote Cache by running the following command from the root of your Turborepo:
-
-```
-# With [global `turbo`](https://turborepo.com/docs/getting-started/installation#global-installation) installed (recommended)
-turbo link
-
-# Without [global `turbo`](https://turborepo.com/docs/getting-started/installation#global-installation), use your package manager
-npx turbo link
-yarn exec turbo link
-pnpm exec turbo link
-```
-
-## Useful Links
-
-Learn more about the power of Turborepo:
-
-- [Tasks](https://turborepo.com/docs/crafting-your-repository/running-tasks)
-- [Caching](https://turborepo.com/docs/crafting-your-repository/caching)
-- [Remote Caching](https://turborepo.com/docs/core-concepts/remote-caching)
-- [Filtering](https://turborepo.com/docs/crafting-your-repository/running-tasks#using-filters)
-- [Configuration Options](https://turborepo.com/docs/reference/configuration)
-- [CLI Usage](https://turborepo.com/docs/reference/command-line-reference)
+⭐ If you find **Roomkarts** useful, consider giving the repository a star!
